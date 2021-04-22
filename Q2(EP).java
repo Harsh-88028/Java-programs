@@ -1,3 +1,5 @@
+2.	To find the factorial of a given number.
+
 import java.util.Scanner;
 public class prog2 {
 
