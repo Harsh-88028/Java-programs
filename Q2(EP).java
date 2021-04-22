@@ -12,3 +12,7 @@ num=scan.nextInt();
         }
 System.out.println("factorial of number is: "+fact);
        }}
+
+Output - enter the number that yu want to factorial: 
+          5
+         factorial of number is: 120
