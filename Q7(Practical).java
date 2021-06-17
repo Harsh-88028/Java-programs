@@ -30,3 +30,12 @@ public class Lineprint2
 
 Output -
   
+example.txt 
+
+hello
+//world
+java
+//program
+
+world
+program
