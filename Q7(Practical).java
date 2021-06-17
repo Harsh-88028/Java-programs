@@ -1,35 +1,32 @@
 7. Write a program to read a file and display only those lines that have the first two characters as '//' (Use try with resources).
 
 
-package com.journaldev.util;
+import java.io.*;
+import java.util.Scanner;
 
-import java.io.BufferedReader;
-import java.io.FileReader;
-import java.io.IOException;
-import java.nio.charset.Charset;
-import java.nio.file.FileSystems;
+public class Lineprint2
+{
 
-public class Java7ResourceManagement {
+ public static void main(string args[])
 
-	public static void main(String[] args) {
+   try(filereader file = new filereader("C:\Users\Himanshu\Desktop\DEKSTOP\2nd Sem\JAVA\Java programs\Example.txt");
+       scanner sc = new scanner(file))
+  {
+           while(sc.hasNextLine())
 
-		try (MyResource mr = new MyResource()) {
-			System.out.println("MyResource created in try-with-resources");
-		} catch (Exception e) {
-			e.printStackTrace();
-		}
-		System.out.println("Out of try-catch block.");
-	}
+      { 
+           String str = sc.nextline();
+           string check = str.substring(0,2);
+           if(check.equals("//"))
+           system.out.printIn(str.substring(2));
+              }
+    
+          } 
+          
+    }       
+ 
+}      
 
-	static class MyResource implements AutoCloseable{
-
-		@Override
-		public void close() throws Exception {
-			System.out.println("Closing MyResource");
-		}
-
-	}
-}
 
 Output -
   
