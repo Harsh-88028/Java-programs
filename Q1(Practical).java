@@ -67,3 +67,7 @@ System.out.println("Product: " + c1.multiply(c2));
 
 Output
 
+Complex 1: 1 + i 2
+Complex 2: 3 + i 4
+Sum: 4 + i 6
+Product: -5 + i 10
